@@ -1,0 +1,83 @@
+{
+  "skinName": "jiugongge-40e87f8e85952d6f82d8",
+  "script": "//yun.tuisnake.com/jimu-web/render/skin/dist/jiugongge-40e87f8e85952d6f82d8.js",
+  "config": {
+    "url": {
+      "type": "text",
+      "name": "表单链接",
+      "value": "https://shengdianhuadg.com/frontend_service/common?appid=3&funid=27&activity_id=xym&theme=1&from_id=2&channel=86660&activity_id=xym"
+    },
+    "bg": {
+      "type": "image",
+      "value": "//yun.duiba.com.cn/h5-mami/webgame/activity/jiugongge/bg02.jpg",
+      "width": 750,
+      "height": 1503
+    },
+    "box": {
+      "type": "image",
+      "value": "//yun.duiba.com.cn/h5-mami/webgame/activity/jiugongge/box.png",
+      "width": 600,
+      "height": 600
+    },
+    "btn": {
+      "type": "image",
+      "value": "//yun.duiba.com.cn/h5-mami/webgame/activity/jiugongge/btn.png",
+      "width": 606,
+      "height": 137
+    },
+    "bottom": {
+      "type": "image",
+      "value": "//yun.duiba.com.cn/h5-mami/webgame/activity/jiugongge/bottom.png",
+      "width": 567,
+      "height": 274
+    },
+    "item01": {
+      "type": "image",
+      "value": "//yun.duiba.com.cn/h5-mami/webgame/activity/jiugongge/item01.png",
+      "width": 178,
+      "height": 179
+    },
+    "item02": {
+      "type": "image",
+      "value": "//yun.duiba.com.cn/h5-mami/webgame/activity/jiugongge/item02.png",
+      "width": 178,
+      "height": 179
+    },
+    "item03": {
+      "type": "image",
+      "value": "//yun.duiba.com.cn/h5-mami/webgame/activity/jiugongge/item03.png",
+      "width": 178,
+      "height": 179
+    },
+    "item04": {
+      "type": "image",
+      "value": "//yun.duiba.com.cn/h5-mami/webgame/activity/jiugongge/item04.png",
+      "width": 178,
+      "height": 179
+    },
+    "item05": {
+      "type": "image",
+      "value": "//yun.duiba.com.cn/h5-mami/webgame/activity/jiugongge/item05.png",
+      "width": 178,
+      "height": 179
+    },
+    "item06": {
+      "type": "image",
+      "value": "//yun.duiba.com.cn/h5-mami/webgame/activity/jiugongge/item06.png",
+      "width": 178,
+      "height": 179
+    },
+    "item07": {
+      "type": "image",
+      "value": "//yun.duiba.com.cn/h5-mami/webgame/activity/jiugongge/item07.png",
+      "width": 178,
+      "height": 179
+    },
+    "item08": {
+      "type": "image",
+      "value": "//yun.duiba.com.cn/h5-mami/webgame/activity/jiugongge/item08.png",
+      "width": 178,
+      "height": 179
+    }
+  }
+}

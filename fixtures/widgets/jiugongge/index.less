@@ -1,0 +1,114 @@
+@import '../../styles/mixin.less';
+.bgi() {
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.lottery {
+  .wd(750px, 1503px);
+  .bgi();
+}
+
+.box {
+  .wd(600px, 600px);
+  .bgi();
+  .ps(240px, 75px);
+  .item {
+    .wd(178px, 178px);
+    .bgi();
+    position: absolute;
+    opacity: 0.5;
+    &.checked {
+      opacity: 1;
+    }
+
+    &:nth-child(1) {
+      left: 36px;
+      top: 36px;
+    }
+    &:nth-child(2) {
+      left: 210px;
+      top: 36px;
+    }
+    &:nth-child(3) {
+      left: 386px;
+      top: 36px;
+    }
+    &:nth-child(8) {
+      left: 36px;
+      top: 214px;
+    }
+    &:nth-child(4) {
+      left: 386px;
+      top: 214px;
+    }
+    &:nth-child(7) {
+      left: 36px;
+      top: 392px;
+    }
+    &:nth-child(6) {
+      left: 210px;
+      top: 392px;
+    }
+    &:nth-child(5) {
+      left: 386px;
+      top: 392px;
+    }
+  }
+}
+.phone_input {
+  .wd(600px, 100px);
+  .ps(880px, 75px);
+  border-radius: 20px;
+  font-size: 30px;
+  &::placeholder {
+    text-align: center;
+    font-size: 30px;
+  }
+}
+.start_button {
+  .wd(606px, 137px);
+  .bgi();
+  .ps(890px, 80px);
+}
+.prize {
+  position: fixed;
+  top: 0px;
+  left: 0;
+  z-index: 11;
+  transition: all .5s;
+  transform: scale(.1);
+  visibility: hidden;
+  &.show {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1);
+  }
+  .mask {
+    .wd(750px, 100vh);
+    .bgi();
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.9);
+  }
+  .prize_body {
+    position: absolute;
+    z-index: 11;
+  }
+  .card {
+    .wd(649px, 455px);
+    .bgi();
+    position: absolute;
+    top: 120px;
+    left: 50px;
+  }
+  .btn {
+    .wd(497px, 193px);
+    .bgi();
+    .ps(640px, 130px);
+  }
+
+  .bottom {
+    .wd(567px, 274px);
+    .bgi();
+    .ps(850px, 100px);
+  }
+}

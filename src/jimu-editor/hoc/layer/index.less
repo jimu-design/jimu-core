@@ -1,0 +1,160 @@
+@squareWidth: 4px;
+@handlerWidth: 16px;
+@rotateOffsetY: 50px;
+@borderColor: rgb(255, 82, 82);
+
+.widget_layer_wrapper {
+  box-sizing: border-box;
+  position: absolute;
+  user-select: none;
+  cursor: normal;
+  // Resizer Styles
+  .resizerTop,
+  .resizerBottom,
+  .resizerLeft,
+  .resizerRight {
+    position: absolute;
+    div {
+      position: absolute;
+      border: 1px solid @borderColor;
+      width: @squareWidth;
+      height: @squareWidth;
+      user-select: none;
+      background-color: #fff;
+      z-index: 2;
+    }
+    [class*='handler'] {
+      border: none;
+      width: @handlerWidth;
+      height: @handlerWidth;
+      opacity: 0;
+      z-index: 2;
+      user-select: none;
+    }
+  }
+  .resizerTop {
+    border-top: 1px solid @borderColor;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 3;
+    .lt {
+      left: -@squareWidth / 2;
+      top: -@squareWidth / 2;
+    }
+    .rt {
+      right: -@squareWidth / 2;
+      top: -@squareWidth / 2;
+    }
+    .ct {
+      left: calc(-@squareWidth / 2 + 50%);
+      top: -@squareWidth / 2;
+    }
+    .lt-handler {
+      left: -@handlerWidth / 2;
+      top: -@handlerWidth / 2;
+      cursor: nw-resize;
+    }
+    .rt-handler {
+      right: -@handlerWidth / 2;
+      top: -@handlerWidth / 2;
+      cursor: ne-resize;
+    }
+    .ct-handler {
+      left: calc(-@handlerWidth / 2 + 50%);
+      top: -@handlerWidth / 2;
+      cursor: n-resize;
+    }
+    .ro {
+      left: calc(-@squareWidth / 2 + 50%);
+      top: calc(-@squareWidth / 2 - @rotateOffsetY);
+    }
+    .ro-handler {
+      left: calc(-@handlerWidth / 2 + 50%);
+      top: calc(-@handlerWidth / 2 - @rotateOffsetY);
+      cursor: move;
+    }
+  }
+  .resizerBottom {
+    border-bottom: 1px solid @borderColor;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 3;
+    .rb {
+      right: -@squareWidth / 2;
+      bottom: -@squareWidth / 2;
+    }
+    .lb {
+      left: -@squareWidth / 2;
+      bottom: -@squareWidth / 2;
+    }
+    .cb {
+      left: calc(-@squareWidth / 2 + 50%);
+      bottom: -@squareWidth / 2;
+    }
+    .rb-handler {
+      right: -@handlerWidth / 2;
+      bottom: -@handlerWidth / 2;
+      cursor: se-resize;
+    }
+    .lb-handler {
+      left: -@handlerWidth / 2;
+      bottom: -@handlerWidth / 2;
+      cursor: sw-resize;
+    }
+    .cb-handler {
+      left: calc(-@handlerWidth / 2 + 50%);
+      bottom: -@handlerWidth / 2;
+      cursor: s-resize;
+    }
+  }
+  .resizerLeft {
+    border-left: 1px solid @borderColor;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 2;
+    .lm {
+      left: -@squareWidth / 2 - 1px;
+      top: calc(-@squareWidth / 2 + 50%);
+    }
+    .lm-handler {
+      left: -@handlerWidth / 2;
+      top: calc(-@handlerWidth / 2 + 50%);
+      cursor: w-resize;
+    }
+  }
+  .resizerRight {
+    border-right: 1px solid @borderColor;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 2;
+    .rm {
+      right: -@squareWidth / 2 - 1px;
+      top: calc(-@squareWidth / 2 + 50%);
+    }
+    .rm-handler {
+      right: -@handlerWidth / 2;
+      top: calc(-@handlerWidth / 2 + 50%);
+      cursor: e-resize;
+    }
+  }
+  // Indicator Styles
+  .indicatorV,
+  .indicatorH {
+    position: absolute;
+    z-index: 200;
+  }
+  .indicatorH {
+    top: 50%;
+    left: 0;
+    right: 0;
+  }
+  .indicatorV {
+    left: 50%;
+    top: 0;
+    bottom: 0;
+  }
+}
